@@ -14,9 +14,9 @@ consider the following master interface
 interface User{
     id: number;
     name: string;
-    email: sting;
+    email: string;
     password: string;
-    createdAt: Date;: Data;
+    createdAt: Date;
 
 }
 ```
@@ -74,7 +74,8 @@ The resulting type includes all properties except `password`.
 {
     id: number;
     name: string;
-    createdAt: Date;: Data;
+    email: string;
+    createdAt: Date;
 }
 ```
 
