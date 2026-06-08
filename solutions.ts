@@ -1,12 +1,12 @@
 
-// Solution 1: Filter even numbers
+// Problem 1: Function to filter even numbers from an array
 
 function filterEvenNumbers(numbers: number[]): number[]{
     return numbers.filter((num) => num % 2 === 0)
 }
 
 
-// Solution 2: return the reversed string
+// Problem 2: Function to reverse a given string
 
 function reverseString(name: string): string{
     return name.split('').reverse().join('')
@@ -14,7 +14,7 @@ function reverseString(name: string): string{
 }
 
 
-// Solution 3: Check type
+// Problem 3: Type guard to determine if input is a string or a number
 
 type StringOrNumber  =  string | number;
 
@@ -27,14 +27,14 @@ function checkType(value: StringOrNumber): string{
     
 }
 
-// Solution 4
+// Problem 4: Generic function to safely retrieve a property value from an object
 
 function getProperty<T, K extends keyof T>(obj: T, key: K){
     return obj[key]
 }
 
 
-// solution 5:
+// Problem 5: Function to add and set the read status of a book object
 
 interface Book {
     title: string;
@@ -51,7 +51,7 @@ function toggleReadStatus(book: Book): Book &{isRead: boolean}
 }
 
 
-// Solution 6:
+// Problem 6: Base Person class and extended Student subclass with details method
 
 class Person  {
   public name: string;
@@ -72,7 +72,7 @@ public grade : string;
             return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}` }
 }
 
-// problem 7
+// Problem 7: Function to find the intersection of two numerical arrays
 
 function getIntersection(arr1: number[], arr2: number[]): number[]{
     const set =  new Set(arr2);
